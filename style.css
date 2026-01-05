@@ -1,0 +1,111 @@
+/* =========================
+   Reset & Global
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* =========================
+   Base Styles
+========================= */
+body {
+  background-color: rgb(67, 119, 116);
+  font-family: sans-serif;
+}
+
+/* =========================
+   Layout
+========================= */
+.card {
+  max-width: 400px;
+  width: 95%;
+  margin: 40px auto 0;
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(rgb(172 171 255), rgb(213 226 255));
+}
+
+/* =========================
+   Search Box
+========================= */
+.search_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.search_box input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search_box .btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.search_box img {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================
+   weather_data Section
+========================= */
+.weather_data {
+  display: none;
+}
+
+.weather_data .weather_icon {
+  width: 80px;
+  margin: 10px auto;
+}
+
+.weather_data .temperature {
+  font-size: 60px;
+  text-align: center;
+}
+
+.weather_data .city_name {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather_data .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.weather_data .details div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather_data .details img {
+  width: 30px;
+}
+
+/* =========================
+   Error Message
+========================= */
+.error {
+  display: none;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: red;
+}
